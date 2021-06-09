@@ -80,7 +80,7 @@ namespace Lab1
             this.numericUpDownCriteries.Size = new System.Drawing.Size(120, 20);
             this.numericUpDownCriteries.TabIndex = 0;
             this.numericUpDownCriteries.Value = new decimal(new int[] {
-            8,
+            9,
             0,
             0,
             0});
@@ -113,7 +113,7 @@ namespace Lab1
             this.numericUpDownElements.Size = new System.Drawing.Size(120, 20);
             this.numericUpDownElements.TabIndex = 0;
             this.numericUpDownElements.Value = new decimal(new int[] {
-            8,
+            7,
             0,
             0,
             0});
