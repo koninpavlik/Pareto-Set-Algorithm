@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Lab1
@@ -19,12 +14,12 @@ namespace Lab1
 
         private void fillGrid()
         {
-            for (int i = 0; i < numericUpDownCriteries.Value; i++)
+            for (int i = 0; i < numericUpDownElements.Value; i++)
             {
                 dataGridView1.Columns.Add(i.ToString(), i.ToString());
                 dataGridView1.Columns[i].DefaultCellStyle.NullValue = "0";
             }
-            for (int i = 0; i < numericUpDownElements.Value; i++)
+            for (int i = 0; i < numericUpDownCriteries.Value; i++)
             {
                 dataGridView1.Rows.Add();
             }
@@ -161,7 +156,7 @@ namespace Lab1
 
             List<List<double>> result = Pareto(matrix);
 
-            for (int i = 0; i < numericUpDownElements.Value; i++)
+            for (int i = 0; i <= numericUpDownElements.Value; i++)
             {
                 dataGridView2.Columns.Add(i.ToString(), i.ToString());
                 dataGridView2.Columns[i].DefaultCellStyle.NullValue = "0";
